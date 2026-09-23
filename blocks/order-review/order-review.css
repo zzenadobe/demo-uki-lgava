@@ -1,0 +1,47 @@
+.order-review {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.order-review h2 {
+  margin-top: 0;
+}
+
+.order-review__form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 480px;
+}
+
+.order-review__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.order-review__item-name {
+  font-weight: 600;
+}
+
+.order-review__score {
+  min-width: 6rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.order-review__form button {
+  justify-self: start;
+}
+
+.order-review__message {
+  white-space: pre-wrap;
+  margin-bottom: 0;
+}
+
+.order-review__loading,
+.order-review__empty {
+  margin: 0;
+  color: #777;
+  font-style: italic;
+}

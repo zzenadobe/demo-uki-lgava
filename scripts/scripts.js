@@ -113,6 +113,20 @@ function buildWidgetAutoBlocks(main) {
 }
 
 /**
+ * Injects a `product-rating` block on product detail pages. The block resolves
+ * the current product's SKU on its own, so no configuration is required here.
+ * @param {Element} main The container element
+ */
+function buildProductRatingAutoBlock(main) {
+  // A product detail page is identified by the authored product-details block.
+  const productDetails = main.querySelector('.product-details');
+  if (!productDetails) return;
+  if (main.querySelector('.product-rating')) return;
+
+  productDetails.after(buildBlock('product-rating', ''));
+}
+
+/**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
@@ -136,6 +150,7 @@ function buildAutoBlocks(main) {
       });
     }
     buildWidgetAutoBlocks(main);
+    buildProductRatingAutoBlock(main);
   } catch (error) {
     console.error('Auto Blocking failed', error);
   }
