@@ -1,23 +1,32 @@
+import { getConfigValue } from '@dropins/tools/lib/aem/configs.js';
+
 /*
- * Centralized configuration for the App Builder backend that hosts the
- * review actions (`submit-review`, `get-product-rating`).
+ * Resolves the App Builder backend that hosts the review actions
+ * (`submit-review`, `get-product-rating`).
  *
- * Set API_BASE_URL to your deployed runtime, e.g.:
- *   https://<namespace>.adobeioruntime.net/api/v1/web/<package>
+ * The base URL is NOT hardcoded: it is read per environment from `config.json`
+ * (the EDS Configuration Service) under the `app-builder-endpoint` key, e.g.:
+ *   "app-builder-endpoint": "https://<namespace>.adobeioruntime.net/api/v1/web/<package>"
  *
- * Leave it empty ('') to fall back to same-origin `/api/*` paths, which
- * requires a CDN/edge proxy that forwards `/api/*` to the runtime.
+ * When the key is absent/empty, calls fall back to same-origin `/api/*`,
+ * which requires a CDN/edge proxy that forwards `/api/*` to the runtime.
  */
-export const API_BASE_URL = '';
+
+/**
+ * @returns {string} the configured App Builder base URL, or '' when unset.
+ */
+export function getApiBaseUrl() {
+  return getConfigValue('app-builder-endpoint') || '';
+}
 
 /**
  * Builds a full URL to an App Builder action.
  * @param {string} path Action name, optionally with a query string,
  *   e.g. 'submit-review' or 'get-product-rating?sku=ABC'.
- * @returns {string} Absolute URL when API_BASE_URL is set, otherwise `/api/<path>`.
+ * @returns {string} Absolute URL when configured, otherwise `/api/<path>`.
  */
 export function appBuilderUrl(path) {
   const clean = path.replace(/^\//, '');
-  const base = API_BASE_URL.replace(/\/$/, '');
+  const base = getApiBaseUrl().replace(/\/$/, '');
   return base ? `${base}/${clean}` : `/api/${clean}`;
 }

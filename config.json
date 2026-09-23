@@ -2,6 +2,7 @@
   "public": {
     "default": {
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/4qGWVTUXbtX9K3483g7QjK/graphql",
+      "app-builder-endpoint": "https://3698791-productreview.adobeioruntime.net/api/v1/web/proj-ab539bb0-8609-4f76-9c29-0dfc7736b51b",
       "headers": {
         "all": {
           "Store": "default"
