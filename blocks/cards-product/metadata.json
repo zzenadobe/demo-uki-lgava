@@ -1,0 +1,35 @@
+{
+  "variantName": "cards-product",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "multiple",
+    "purpose": "cards-product",
+    "structure": "3-up grid of product tiles: image, name, price, CTA",
+    "hasBgImage": false,
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": true
+  },
+  "contentPattern": {
+    "structure": "Each row = [image | heading, price paragraph, CTA link]",
+    "buttonCount": 3,
+    "imageCount": 3
+  },
+  "options": [],
+  "memberVariantIds": ["cards-product"],
+  "sourceContext": {
+    "originUrl": "https://www.frescopacommerce.com/",
+    "discoveredDuring": "site-migration",
+    "blockPosition": "middle"
+  },
+  "usage": {
+    "pagesUsing": [
+      { "url": "https://www.frescopacommerce.com/", "screenshot": "migration-work/screenshot.png" }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-29T00:00:00.000Z"
+  }
+}

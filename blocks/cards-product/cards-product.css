@@ -1,0 +1,103 @@
+/* cards-product: 3-up white elevated product tiles (source: frescopacommerce.com top sellers) */
+.cards-product > ul {
+  list-style: none;
+  margin: 40px 0 80px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.cards-product .cards-product-card {
+  position: relative;
+  margin: 0;
+  padding: 30px 0 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+}
+
+.cards-product .cards-product-card-image {
+  line-height: 0;
+}
+
+.cards-product .cards-product-card-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 256px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+/* block (not flex) so the heading top margin collapses with the body margin, as on source */
+.cards-product .cards-product-card-body {
+  margin: 16px;
+}
+
+.cards-product .cards-product-card-body :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0.8em 0 0.25em;
+  font: 400 var(--heading-size-s)/30px var(--heading-font-family);
+  letter-spacing: 0;
+  color: var(--frescopa-color-text);
+}
+
+.cards-product .cards-product-card-body p {
+  margin: 10px;
+  font: 400 18px/24px var(--body-font-family);
+}
+
+.cards-product .cards-product-card-body p.cards-product-card-cta {
+  margin: 0 10px 18px;
+}
+
+/* CTA pill - the link is not auto-decorated as .button, so style it here */
+.cards-product .cards-product-card-cta a {
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 16px 0;
+  padding: 0.5em 1.2em;
+  border: var(--shape-border-width-3) solid transparent;
+  border-radius: var(--shape-border-radius-3);
+  background-color: var(--frescopa-color-primary);
+  color: var(--color-neutral-50);
+  font: 500 16px/20px var(--body-font-family);
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cards-product .cards-product-card-cta a:hover,
+.cards-product .cards-product-card-cta a:focus {
+  color: var(--color-neutral-50);
+  text-decoration: none;
+}
+
+.cards-product .cards-product-card-cta a:focus-visible {
+  outline: 2px solid var(--frescopa-color-text);
+  outline-offset: 2px;
+}
+
+@media (min-width: 900px) {
+  .cards-product > ul {
+    flex-direction: row;
+  }
+
+  .cards-product .cards-product-card {
+    width: 380px;
+    min-height: 410px;
+  }
+
+  .cards-product .cards-product-card-body p {
+    margin: 0;
+  }
+
+  .cards-product .cards-product-card-body p.cards-product-card-cta {
+    margin: 0 0 18px;
+  }
+}

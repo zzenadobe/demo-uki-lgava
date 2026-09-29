@@ -1,0 +1,35 @@
+{
+  "variantName": "columns-locator",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "moderate",
+    "imagePattern": "noimg",
+    "purpose": "columns-store-locator",
+    "structure": "2 columns: text panel (heading, label, post-code search form) | interactive map",
+    "hasBgImage": false,
+    "position": "top",
+    "isFullWidth": false,
+    "hasGrid": true
+  },
+  "contentPattern": {
+    "structure": "1 row x 2 columns: [heading, label paragraph, 'Search Me' text | placeholder/empty (map rendered at runtime)]",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "options": [],
+  "memberVariantIds": ["columns-locator"],
+  "sourceContext": {
+    "originUrl": "https://www.frescopacommerce.com/",
+    "discoveredDuring": "site-migration",
+    "blockPosition": "top"
+  },
+  "usage": {
+    "pagesUsing": [
+      { "url": "https://www.frescopacommerce.com/", "screenshot": "migration-work/screenshot.png" }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-29T00:00:00.000Z"
+  }
+}

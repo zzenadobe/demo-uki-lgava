@@ -1,0 +1,124 @@
+/* columns-reward: rounded teal rewards banner with decorative ribbon.
+   Values extracted from frescopacommerce.com .reward-content / .reward-left / .reward-right */
+.columns-reward {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: var(--frescopa-color-primary);
+  background-image: url("../../styles/backgrounds/reward-banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15% 0%;
+  color: var(--frescopa-color-text);
+}
+
+/* optional authored decoration image (ribbon is provided by the background) */
+.columns-reward .columns-reward-decoration {
+  display: none;
+}
+
+.columns-reward .columns-reward-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  color: #fff;
+}
+
+.columns-reward .columns-reward-content :is(h1, h2, h3, h4, h5, h6) {
+  margin: 25.6px 0 8px;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: 1.28px;
+  color: #fff;
+}
+
+.columns-reward .columns-reward-content p {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.columns-reward .columns-reward-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.columns-reward .columns-reward-action > p {
+  margin: 0;
+}
+
+.columns-reward a.columns-reward-cta:any-link {
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  margin: 16px 0;
+  border: 3px solid var(--frescopa-color-cta-secondary);
+  border-radius: 24px;
+  padding: 8px 19.2px;
+  background-color: var(--frescopa-color-cta-secondary);
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1.28px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: background-color 0.2s ease, filter 0.2s ease;
+}
+
+.columns-reward a.columns-reward-cta:hover,
+.columns-reward a.columns-reward-cta:focus-visible {
+  filter: brightness(1.12);
+}
+
+/* narrow phones: the source's 220px text inset overflows, so show the
+   ribbon bow as a header band above the text instead */
+@media (max-width: 599px) {
+  .columns-reward {
+    padding-top: 140px;
+    background-size: auto 120px;
+  }
+}
+
+@media (min-width: 600px) {
+  .columns-reward .columns-reward-content {
+    width: 50%;
+    padding-left: 220px;
+  }
+}
+
+@media (min-width: 900px) {
+  .columns-reward {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .columns-reward .columns-reward-content {
+    /* padding-block reproduces the spacing of the source's empty headline/detail nodes */
+    padding: 10px 0 28px 252px;
+  }
+
+  .columns-reward .columns-reward-content :is(h1, h2, h3, h4, h5, h6) {
+    margin-bottom: 18px;
+  }
+
+  .columns-reward .columns-reward-content p {
+    margin: 0 0 18px;
+  }
+}

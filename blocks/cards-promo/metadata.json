@@ -1,0 +1,35 @@
+{
+  "variantName": "cards-promo",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "large",
+    "purpose": "cards-promo",
+    "structure": "2-up grid of large promo tiles: full-width photo, heading, paragraph, CTA",
+    "hasBgImage": false,
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": true
+  },
+  "contentPattern": {
+    "structure": "Each row = [image | heading, paragraph, CTA link]",
+    "buttonCount": 2,
+    "imageCount": 2
+  },
+  "options": [],
+  "memberVariantIds": ["cards-promo"],
+  "sourceContext": {
+    "originUrl": "https://www.frescopacommerce.com/",
+    "discoveredDuring": "site-migration",
+    "blockPosition": "middle"
+  },
+  "usage": {
+    "pagesUsing": [
+      { "url": "https://www.frescopacommerce.com/", "screenshot": "migration-work/screenshot.png" }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-29T00:00:00.000Z"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "variantName": "hero-teaser",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "minimal",
+    "imagePattern": "background",
+    "purpose": "hero-promo-teaser",
+    "structure": "full-bleed background image + left-aligned eyebrow, heading, single CTA",
+    "hasBgImage": true,
+    "position": "top",
+    "isFullWidth": false,
+    "hasGrid": false
+  },
+  "contentPattern": {
+    "structure": "1 column: row 1 = background image (picture); row 2 = eyebrow paragraph, H1/H2 heading, CTA link",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "options": [],
+  "memberVariantIds": ["hero-teaser"],
+  "sourceContext": {
+    "originUrl": "https://www.frescopacommerce.com/",
+    "discoveredDuring": "site-migration",
+    "blockPosition": "top"
+  },
+  "usage": {
+    "pagesUsing": [
+      { "url": "https://www.frescopacommerce.com/", "screenshot": "migration-work/screenshot.png" }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-29T00:00:00.000Z"
+  }
+}

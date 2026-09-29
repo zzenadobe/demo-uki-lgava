@@ -1,0 +1,35 @@
+{
+  "variantName": "columns-reward",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "imagePattern": "noimg",
+    "purpose": "columns-reward-banner",
+    "structure": "banner: heading + paragraph left, single CTA right, decorative ribbon",
+    "hasBgImage": false,
+    "position": "bottom",
+    "isFullWidth": false,
+    "hasGrid": true
+  },
+  "contentPattern": {
+    "structure": "1 row x 2 columns: [heading, paragraph | CTA link]",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "options": [],
+  "memberVariantIds": ["columns-reward"],
+  "sourceContext": {
+    "originUrl": "https://www.frescopacommerce.com/",
+    "discoveredDuring": "site-migration",
+    "blockPosition": "bottom"
+  },
+  "usage": {
+    "pagesUsing": [
+      { "url": "https://www.frescopacommerce.com/", "screenshot": "migration-work/screenshot.png" }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-29T00:00:00.000Z"
+  }
+}

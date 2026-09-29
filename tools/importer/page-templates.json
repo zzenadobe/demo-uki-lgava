@@ -1,0 +1,132 @@
+{
+  "templates": [
+    {
+      "name": "home",
+      "urls": [
+        "https://www.frescopacommerce.com/"
+      ],
+      "representativeUrl": "https://www.frescopacommerce.com/",
+      "description": "Frescopa homepage: promo teaser, store locator, product/category/promo cards, rewards banner",
+      "blocks": [
+        {
+          "name": "hero-teaser",
+          "instances": [
+            ".teaser-container .teaser.block"
+          ]
+        },
+        {
+          "name": "columns-locator",
+          "instances": [
+            ".store-locator-container .store-locator.block"
+          ]
+        },
+        {
+          "name": "cards-product",
+          "instances": [
+            ".section.background.cards-container .cards.block"
+          ]
+        },
+        {
+          "name": "cards-category",
+          "instances": [
+            ".section.card-tiles.cards-container .cards.block"
+          ]
+        },
+        {
+          "name": "cards-promo",
+          "instances": [
+            ".section.home.cards-container .cards.block"
+          ]
+        },
+        {
+          "name": "columns-reward",
+          "instances": [
+            ".reward-container .reward.block"
+          ]
+        }
+      ],
+      "urlPattern": "/",
+      "sections": [
+        {
+          "id": "rc2",
+          "name": "quiz-teaser",
+          "selector": [
+            ".section.teaser-container"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-teaser"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc4",
+          "name": "store-locator",
+          "selector": [
+            ".section.store-locator-container"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-locator"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc5",
+          "name": "top-sellers",
+          "selector": [
+            ".section.background.cards-container"
+          ],
+          "style": "background",
+          "blocks": [
+            "cards-product"
+          ],
+          "defaultContent": [
+            ".section.background.cards-container > .default-content-wrapper"
+          ]
+        },
+        {
+          "id": "rc6",
+          "name": "shop-categories",
+          "selector": [
+            ".section.card-tiles.cards-container"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-category"
+          ],
+          "defaultContent": [
+            ".section.card-tiles.cards-container > .default-content-wrapper"
+          ]
+        },
+        {
+          "id": "rc7",
+          "name": "promo-tiles",
+          "selector": [
+            ".section.home.cards-container"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-promo"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc8",
+          "name": "rewards",
+          "selector": [
+            ".section.reward-container"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-reward"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "projectType": "da"
+  }
+}

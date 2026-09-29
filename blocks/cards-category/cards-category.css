@@ -1,0 +1,68 @@
+/* cards-category: "Shop all" category tiles (source: .card-tiles .cards) */
+
+/* source: main > .section + .card-tiles > div { max-width: 1200px } */
+main > .section.cards-category-container > div {
+  max-width: 1200px;
+}
+
+/* source: .card-tiles h2 */
+main > .section.cards-category-container > .default-content-wrapper h2 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.cards-category > ul {
+  list-style: none;
+  margin: 40px 0 80px;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.cards-category .cards-category-card {
+  position: relative;
+  margin: 16px 0;
+  padding-top: 30px;
+  overflow: hidden;
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 12%);
+}
+
+.cards-category .cards-category-card-icon {
+  min-width: 224px;
+  line-height: 0;
+}
+
+.cards-category .cards-category-card-icon img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.cards-category .cards-category-card-body {
+  margin: 16px;
+}
+
+.cards-category .cards-category-card-body :is(h1, h2, h3, h4, h5, h6) {
+  font: 400 var(--heading-size-s)/30px var(--heading-font-family);
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* stretch the link so the whole tile is clickable */
+.cards-category .cards-category-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+@media (min-width: 900px) {
+  .cards-category .cards-category-card {
+    width: 224px;
+  }
+}

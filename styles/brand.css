@@ -1,0 +1,24 @@
+/* Frescopa brand tokens (source: frescopacommerce.com styles.css) */
+:root {
+  --frescopa-color-background: #f4e9dc;
+  --frescopa-color-brand: #a33532;
+  --frescopa-color-primary: #00647d;
+  --frescopa-color-secondary: #dc6e52;
+  --frescopa-color-tertiary: #eba439;
+  --frescopa-color-text: #58181d;
+  --frescopa-color-black: #2c2c2c;
+  --frescopa-color-cta-secondary: #95351d;
+  --heading-font-family: baskerville, "Baskerville Old Face", "Libre Baskerville", georgia, serif;
+  --body-font-family: roboto, roboto-fallback, sans-serif;
+  --background-color: #fff;
+  --text-color: var(--frescopa-color-text);
+  --link-color: var(--frescopa-color-text);
+  --link-hover-color: var(--frescopa-color-text);
+  --heading-size-xxl: 56px;
+  --heading-size-xl: 48px;
+  --heading-size-l: 36px;
+  --heading-size-m: 32px;
+  --heading-size-s: 24px;
+  --heading-size-xs: 20px;
+  --site-width: 1360px;
+}
